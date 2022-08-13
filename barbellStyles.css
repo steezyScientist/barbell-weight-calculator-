@@ -1,0 +1,40 @@
+﻿body {
+    background: #C1C1C1;
+}
+
+.flex-container {
+    
+    display: flex;
+   gap: 15px;
+    flex-direction: column;
+    padding: 10px;
+}
+
+#weightInput {
+    border: none;
+    background-color: #C1C1C1;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 40px;
+    font-weight: 1000;
+}
+
+#inputButton {
+    height: 50px;
+    border-width: 5px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 1000;
+    font-size: 20px;
+}
+#inputButton:hover{
+    opacity: 0.5;
+}
+
+#drawPlates{
+    padding: 10px;
+    
+    
+}
