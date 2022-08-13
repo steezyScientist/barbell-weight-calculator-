@@ -4,6 +4,7 @@ Simplify your training by entering your training weight and let the calculator
 show you which weights are needed on each side to meet the target weight. 
 
 ### Created by Artiom Guzun
+#### Made with HTML, CSS, Vanilla JS
 
 ### To Do:
 - Visual design overhaul
