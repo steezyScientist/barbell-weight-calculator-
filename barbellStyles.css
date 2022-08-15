@@ -1,40 +1,61 @@
-﻿body {
-    background: #C1C1C1;
+body {
+    background: #22c1c3;
 }
 
 .flex-container {
     
     display: flex;
-   gap: 15px;
-    flex-direction: column;
-    padding: 10px;
+	flex-direction: column;
+	gap: 10px;
+	margin-top: 0;
+	margin-left: 10%;
+	margin-right: 10%;
+	background: #fdbb2d;
+	align-self: center;
+
 }
 
-#weightInput {
-    border: none;
-    background-color: #C1C1C1;
-    text-align: center;
-    font-family: sans-serif;
-    font-size: 40px;
-    font-weight: 1000;
+
+#weightInput{
+	border: none;
+	background-color: transparent;
+	font: bold 55px Poppins, sans-serif;
+	text-align: center;
+-webkit-text-fill-color: #B0E0E6;
+-webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: black;
+
+
+
 }
 
-#inputButton {
-    height: 50px;
-    border-width: 5px;
-    border-radius: 10px;
-    background-color: black;
-    color: white;
-    font-family: sans-serif;
-    font-weight: 1000;
-    font-size: 20px;
+#weightInput:focus{
+	outline: none;
 }
-#inputButton:hover{
-    opacity: 0.5;
+
+
+/*removes the arrows from the input field*/
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/******************************************/
+
+#inputButton{
+width: 50%;
+margin-right: auto;
+margin-left: auto;
+padding: 1%;
 }
 
 #drawPlates{
-    padding: 10px;
-    
-    
+height: 70%;
+width: 70%;
+padding: 2%;
+margin-right: auto;
+margin-left: auto;
+
 }
