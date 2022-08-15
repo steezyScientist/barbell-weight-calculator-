@@ -5,7 +5,7 @@
 
 
 //Available plates
-const weightAvailable = [45, 35, 25, 10, 5, 2.5, 1.25];
+const weightAvailable = [45, 35, 25, 10, 5, 2.5, 1.25, 0.5];
 const barWeight = 45;
 
 //get user input of total weight through the button
@@ -89,19 +89,20 @@ function drawPlates(whichPlate, offset_x, numPlates) {
 
     for (let i = 0; i < numPlates; i++) {
         ctx.beginPath();
-        ctx.rect(x_rect + offset, y_rect, h_plate, w_plate);
+        ctx.fillRect(x_rect + offset, y_rect, h_plate, w_plate);
+		ctx.strokeStyle = "#FFB6C1";
         ctx.stroke();
 
         if (text < 5) {
-            ctx.font = '10px sans-serif';
+            ctx.font = '10px Poppins';
             ctx.textAlign = 'center';
-            ctx.fillText(text, x_text + offset, y_text - 3);
+            ctx.strokeText(text, x_text + offset, y_text - 3);
             
 
         } else {
-            ctx.font = '20px sans-serif';
+            ctx.font = '20px Poppins';
             ctx.textAlign = 'center';
-            ctx.fillText(text, x_text + offset, y_text);
+            ctx.strokeText(text, x_text + offset, y_text);
 
         }
 
